@@ -22,7 +22,8 @@ namespace APIModulo.Controllers
         {
             _context.Add(contato);
             _context.SaveChanges();
-            return Ok(contato);
+            return CreatedAtAction(nameof(ObterPorId), new { id = contato.ID }, contato);
+            //função que retorna o endereço em que se pode obter tal resultado no "Response headers" do swagger
         }
         [HttpGet("{id}")]
         public IActionResult ObterPorId(int id)
