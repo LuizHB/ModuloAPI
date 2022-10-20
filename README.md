@@ -16,7 +16,9 @@ As migrations espelham as alterações feitas no banco de dados (SQL) utilizando
 
 ## Métodos e Resultados
 
-- [UsuarioControler](/Controllers/UsuarioController.cs) com métodos:
+Os controladores (Controllers) são o ponto de entrada onde estão disponibilizados os métodos. Estão localizadas na pasta [Controllers](/Controllers/).
+
+- [UsuarioController](/Controllers/UsuarioController.cs) com métodos:
   - Obter hora e data:
     ```json
     {
